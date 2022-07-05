@@ -200,6 +200,7 @@ function createTable(title,dict, keys)
     });
     const sumTh = document.createElement('th');
     sumTh.textContent = '合計';
+    sumTh.style.textAlign = 'center';
     tr.appendChild(sumTh);
     table.appendChild(tr);
     
