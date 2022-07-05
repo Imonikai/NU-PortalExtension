@@ -52,6 +52,7 @@ function main()
 
             let gpaElement = document.createElement('p');
             gpaElement.textContent = 'あなたのGPA:' + calcGpa(scoreList, 2);
+            gpaElement.style.fontSize = '1.2em';
             risyuchuTable.after(gpaElement);
     
         }
@@ -203,6 +204,7 @@ function createTable(title,dict, keys)
         let td = document.createElement('td');
         td.textContent = dict[key];
         td.style.textAlign = 'center';
+        td.style.border = 'solid 1px';
         tr.appendChild(td);
     })
     table.append(tr);
