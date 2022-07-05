@@ -33,10 +33,10 @@ function main()
         if(dispRadioChecked == 'tujyo')
         {
             //ここからメイン
-            let kamokuList = document.querySelectorAll('.tdKamokuList');
-            let taniList = document.querySelectorAll('.tdTaniList');
-            let hyokaList = document.querySelectorAll('.tdHyokaList');
-            let risyuList = document.querySelectorAll('.tdKamokuListRishuchu');
+            const kamokuList = document.querySelectorAll('.tdKamokuList');
+            const taniList = document.querySelectorAll('.tdTaniList');
+            const hyokaList = document.querySelectorAll('.tdHyokaList');
+            const risyuList = document.querySelectorAll('.tdKamokuListRishuchu');
             let scoreList = [];
             let limit = kamokuList.length;
     
@@ -45,7 +45,7 @@ function main()
                 scoreList.push([kamokuList[i].textContent, taniList[i].textContent, hyokaList[i].textContent, risyuList[i].textContent]);
             }
             const syutokuTable = createTable('取得済み単位', getSyutokuDict(scoreList), getDictKeys(scoreList));
-            document.querySelector('.tblDispChk').appendChild(syutokuTable);
+            document.querySelector('.tblDispChk').after(syutokuTable);
 
             const risyuchuTable = createTable('履修中単位', getRisyuchuDict(scoreList), getDictKeys(scoreList));
             syutokuTable.after(risyuchuTable);
