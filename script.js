@@ -50,7 +50,7 @@ function main()
             const risyuchuTable = createTable('履修中単位', getRisyuchuDict(scoreList), getDictKeys(scoreList));
             syutokuTable.after(risyuchuTable);
 
-            let gpaElement = document.createElement('p');
+            const gpaElement = document.createElement('p');
             gpaElement.textContent = 'あなたのGPA:' + calcGpa(scoreList, 2);
             gpaElement.style.fontSize = '1.2em';
             risyuchuTable.after(gpaElement);
@@ -185,34 +185,34 @@ function getDictKeys(array)
 
 function createTable(title,dict, keys)
 {
-    let table =  document.createElement('table');
+    const table =  document.createElement('table');
     let tr = document.createElement('tr');
-    let caption = document.createElement('caption');
+    const caption = document.createElement('caption');
     let sum = 0;
 
     caption.textContent = title;
     table.appendChild(caption);
 
     keys.forEach(key => {
-        let th = document.createElement('th');
+        const th = document.createElement('th');
         th.textContent = key;
         tr.appendChild(th);
     });
-    let sumTh = document.createElement('th');
+    const sumTh = document.createElement('th');
     sumTh.textContent = '合計';
     tr.appendChild(sumTh);
     table.appendChild(tr);
     
     tr = document.createElement('tr');
     keys.forEach(key => {
-        let td = document.createElement('td');
+        const td = document.createElement('td');
         td.textContent = dict[key];
         sum += Number(dict[key]);
         td.style.textAlign = 'center';
         td.style.border = 'solid 1px';
         tr.appendChild(td);
     })
-    let sumTd = document.createElement('td');
+    const sumTd = document.createElement('td');
     sumTd.textContent = sum;
     sumTd.style.textAlign = 'center';
     sumTd.style.border = 'solid 1px';
