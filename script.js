@@ -188,6 +188,7 @@ function createTable(title,dict, keys)
     let table =  document.createElement('table');
     let tr = document.createElement('tr');
     let caption = document.createElement('caption');
+    let sum = 0;
 
     caption.textContent = title;
     table.appendChild(caption);
@@ -197,16 +198,26 @@ function createTable(title,dict, keys)
         th.textContent = key;
         tr.appendChild(th);
     });
+    let sumTh = document.createElement('th');
+    sumTh.textContent = '合計';
+    tr.appendChild(sumTh);
     table.appendChild(tr);
     
     tr = document.createElement('tr');
     keys.forEach(key => {
         let td = document.createElement('td');
         td.textContent = dict[key];
+        sum += Number(dict[key]);
         td.style.textAlign = 'center';
         td.style.border = 'solid 1px';
         tr.appendChild(td);
     })
+    let sumTd = document.createElement('td');
+    sumTd.textContent = sum;
+    sumTd.style.border = 'solid 1px';
+    tr.appendChild(sumTd);
+    table.appendChild(tr);
+
     table.append(tr);
 
     return table;
