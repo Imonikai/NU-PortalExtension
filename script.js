@@ -194,8 +194,6 @@ function createTable(title,dict, keys)
     keys.forEach(key => {
         let th = document.createElement('th');
         th.textContent = key;
-        th.style.textAlign = 'center';
-        th.style.fontSize = '1.1em';
         tr.appendChild(th);
     });
     table.appendChild(tr);
@@ -205,7 +203,6 @@ function createTable(title,dict, keys)
         let td = document.createElement('td');
         td.textContent = dict[key];
         td.style.textAlign = 'center';
-        td.style.fontSize = '1.1em';
         tr.appendChild(td);
     })
     table.append(tr);
