@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 //配列の添字
 const KAMOKU = 0;
