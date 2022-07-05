@@ -214,6 +214,7 @@ function createTable(title,dict, keys)
     })
     let sumTd = document.createElement('td');
     sumTd.textContent = sum;
+    sumTd.style.textAlign = 'center';
     sumTd.style.border = 'solid 1px';
     tr.appendChild(sumTd);
     table.appendChild(tr);
