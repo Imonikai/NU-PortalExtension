@@ -1,0 +1,12 @@
+{
+    "name": "NU-PortalExtension",
+    "description": "日本大学工学部学生用ポータルサイトの成績照会で取得単位数、履修中単位、GPAの確認",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://portal.upex.ce.nihon-u.ac.jp/up/faces/up/*"],
+            "js": ["script.js"]
+        }
+    ]
+}
