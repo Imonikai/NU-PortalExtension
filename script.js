@@ -15,7 +15,7 @@ function main()
 
     const pageTitle = document.querySelector('.titleAreaL');
     
-    if(pageTitle.textContent == '成績照会')
+    if(pageTitle != null && pageTitle.textContent == '成績照会')
     {
         console.log('NU-PortalExtensionの動作対象ページです。');
     
