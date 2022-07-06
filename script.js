@@ -38,7 +38,7 @@ function main()
             const hyokaList = document.querySelectorAll('.tdHyokaList');
             const risyuList = document.querySelectorAll('.tdKamokuListRishuchu');
             let scoreList = [];
-            let limit = kamokuList.length;
+            const limit = kamokuList.length;
     
             for( let i = 0; i < limit; i++ )
             {
