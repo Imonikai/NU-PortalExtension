@@ -51,7 +51,7 @@ function main()
             syutokuTable.after(risyuchuTable);
 
             const gpaElement = document.createElement('p');
-            gpaElement.textContent = 'あなたのGPA: ' + calcGpa(scoreList, 2);
+            gpaElement.textContent = 'あなたのGPA: ' + calcGpa(scoreList);
             gpaElement.style.fontSize = '1.2em';
             risyuchuTable.after(gpaElement);
     
@@ -137,7 +137,7 @@ function getRisyuchuDict(array)
 }
 
 
-function calcGpa(array, fix)
+function calcGpa(array)
 {
     let tanniSum = 0;
     let hyokaSum = 0;
