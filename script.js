@@ -90,7 +90,7 @@ function getSyutokuDict(array)
                 break;
             }
 
-            if(array[i][HYOKA] == 'S' || array[i][HYOKA] == 'A' || array[i][HYOKA] == 'B'|| array[i][HYOKA] == 'C')
+            if(array[i][HYOKA] == 'S' || array[i][HYOKA] == 'A' || array[i][HYOKA] == 'B'|| array[i][HYOKA] == 'C' || array[i][HYOKA] == 'N')
             {
                 syutokuDict[target] += Number(array[i][TANNI]);
             }
