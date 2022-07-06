@@ -12,3 +12,7 @@
 
 # どうして変数名をローマ字で命名しているの？
 ポータルサイトのhtmlはクラス名にローマ字を使用していたため、統一したほうがわかりやすいかなと思い、ローマ字で命名しています。
+
+# スクリーンショット
+![before](https://user-images.githubusercontent.com/108214765/177471210-7e5fee90-2ea4-4f83-b4f8-a0c041060c86.png)
+![after](https://user-images.githubusercontent.com/108214765/177471222-77fef00d-2b97-4fd5-a12c-684d7efed45e.png)
