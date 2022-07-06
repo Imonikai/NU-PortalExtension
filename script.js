@@ -220,6 +220,7 @@ function createTable(title,dict, keys)
     tr.appendChild(sumTd);
     table.appendChild(tr);
 
+    table.style.border = 'solid 1px';
     table.append(tr);
 
     return table;
