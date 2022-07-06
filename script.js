@@ -53,6 +53,8 @@ function main()
             const gpaElement = document.createElement('p');
             gpaElement.textContent = 'あなたのGPA: ' + calcGpa(scoreList) + '　(by NU-PortalExtension)';
             gpaElement.style.fontSize = '1.2em';
+            gpaElement.style.marginTop = '1em';
+            gpaElement.style.marginBottom = '1em';
             risyuchuTable.after(gpaElement);
     
         }
@@ -191,6 +193,7 @@ function createTable(title,dict, keys)
     let sum = 0;
 
     caption.textContent = title;
+    caption.style.marginTop = '2em';
     table.appendChild(caption);
 
     keys.forEach(key => {
