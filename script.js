@@ -166,7 +166,7 @@ function calcGpa(array, fix)
             }
         }
     }
-    return (hyokaSum/tanniSum).toFixed(fix);
+    return Math.round((hyokaSum/tanniSum) * 100) / 100;
 }
 
 function getDictKeys(array)
