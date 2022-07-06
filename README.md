@@ -15,4 +15,4 @@
 
 # スクリーンショット
 ![before](https://user-images.githubusercontent.com/108214765/177471210-7e5fee90-2ea4-4f83-b4f8-a0c041060c86.png)
-![after](https://user-images.githubusercontent.com/108214765/177471222-77fef00d-2b97-4fd5-a12c-684d7efed45e.png)
+![after](https://user-images.githubusercontent.com/108214765/177490613-9a87a7a1-3808-497a-bb96-10cc6725a073.png)
