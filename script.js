@@ -51,7 +51,7 @@ function main()
             syutokuTable.after(risyuchuTable);
 
             const gpaElement = document.createElement('p');
-            gpaElement.textContent = 'あなたのGPA: ' + calcGpa(scoreList);
+            gpaElement.textContent = 'あなたのGPA: ' + calcGpa(scoreList) + '　(by NU-PortalExtension)';
             gpaElement.style.fontSize = '1.2em';
             risyuchuTable.after(gpaElement);
     
